@@ -1,6 +1,7 @@
 // lib/data.ts
 
 import { link } from "fs";
+import { title } from "process";
 
 export const profile = {
   name: "Dr. Edward Kahuthia Murimi",
@@ -172,9 +173,13 @@ export const publications = [
   {
     category: "Academic & Journals",
     items: [
+      { title: "Reviewer for the African Human Rights Law Journal ", venue: "African Human Rights Law Journal", year: "2024-Present" },
       { title: "Fluctuating standards of proof at the African Court: a case for principled flexibility", venue: "African Human Rights Yearbook", year: "2023", link: "https://www.ahry.up.ac.za/images/ahry/volume7/Murimi_2023.pdf" },
+      { title: "Applying an Evidentiary Lens to the Conflict in Ethiopia: Issues Arising from Investigative Mandates", venue: "PhD Thesis (Ghent University)", year: "2022", link: "https://dissect.ugent.be/applying-an-evidentiary-lens-to-the-conflict-in-ethiopia-issues-arising-from-investigative-mandates/" },
+      { title: "How long is (not) too long before filing an application at the African Court? Evidentiary challenges for incarcerated applicants", venue: "PhD Thesis (Ghent University)", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
       { title: "Youth mobilities and belonging in and out of a Kenyan urban ‘hood’", venue: "Rise Africa Discussion Series", year: "2021", link: "https://riseafrica.iclei.org/thought-pieces/#1627481660341-bd1190a3-a204" },
-      { title: "Advancing the Right to Demonstrate in Kenya Through Negotiated Management", venue: "Palgrave Macmillan (Book Chapter)", year: "2020", link: "https://link.springer.com/chapter/10.1007/978-3-030-27049-0_8" },
+      { title: "Legal editor for Kenyan judiciary’s first Bench book on electoral disputes resolution.  ", venue: "Kenyan Judiciary Bench Book on Electoral Disputes Resolution", year: "2017", link: "https://judiciary.go.ke/download/bench-book-on-electoral-disputes-resolution/" },
+      { title: "Developing Benchmarks and Indicators Under ACDEG to Advance the Rule of Law in Africa.", venue: "Faculty of Law, University of Pretoria.", year: "2017" },
     ]
   },
   {
@@ -184,8 +189,9 @@ export const publications = [
       { title: "State-sanctioned human rights violations in Kenya: countering repression with resistance", venue: "AfricLaw", year: "2025", link: "https://africlaw.com/2025/08/29/state-sanctioned-human-rights-violations-in-kenya-countering-repression-with-resistance/" },
       { title: "Re-Imagining Standards of Fairness in Open Source Investigations", venue: "Opinio Juris", year: "2023", link: "https://opiniojuris.org/2023/02/10/symposium-on-fairness-equality-and-diversity-in-open-source-investigations-re-imagining-standards-of-fairness-in-open-source-investigations-a-commentary-on-fact-finding-in-the-tigray-conflict/" },
       { title: "Evidentiary challenges for incarcerated applicants at the African Court", venue: "Blog Post", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
+      { title: "Advancing the Right to Demonstrate in Kenya Through Negotiated Management", venue: "Palgrave Macmillan (Book Chapter)", year: "2020", link: "https://link.springer.com/chapter/10.1007/978-3-030-27049-0_8" },
       { title: "Arresting Corruption in Africa: Role of the Youth", venue: "Institute for Security Studies (Policy Brief)", year: "2018", link: "https://issafrica.org/research/policy-brief/arresting-corruption-in-africa-role-of-the-youth" },
-      { title: "TBeyond Rhetoric – Engaging Africa’s Youth in Democratic Governance", venue: "Institute for Security Studies ", year: "2017", link: "https://issafrica.org/research/policy-brief/beyond-rhetoric-engaging-africas-youth-in-democratic-governance" },
+      { title: "Beyond Rhetoric – Engaging Africa’s Youth in Democratic Governance", venue: "Institute for Security Studies ", year: "2017", link: "https://issafrica.org/research/policy-brief/beyond-rhetoric-engaging-africas-youth-in-democratic-governance" },
 
     ]
   }
@@ -199,8 +205,19 @@ export const media = [
   { title: "Care, lest BBI tampers with graft war", outlet: "Daily Nation", date: "28 Jan 2020", link: "https://nation.africa/kenya/blogs-opinion/opinion/care-lest-bbi-tampers-with-graft-war-222912" },
   { title: "DCI and EACC have shared mandate to investigate corruption", outlet: "The Standard", date: "27 Mar 2019", link: "https://www.standardmedia.co.ke/opinion/article/2001316360/dci-and-eacc-have-shared-mandate-to-investigate-corruption" },
   { title: "Judiciary at fault to issue long pre-trial detention orders", outlet: "The Standard", date: "27 Feb 2019", link: "https://www.standardmedia.co.ke/opinion/article/2001313150/judiciary-at-fault-to-issue-long-pre-trial-detention-orders" },
+  { title: "It’s duty of State to protect right of assembly and demonstration", outlet: "Daily Nation", date: "18 May 2016", link: "https://nation.africa/oped/Opinion/It-is-duty-of-State-to-protect-right-of-assembly/440808-3208900-cy667j/index.html" },
+  { title: "When the arms of government test boundaries’ ", outlet: "The Standard", date: "23 Aug 2015", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6IjgwOGtxc2VPNmQwdHo0OWZ6YnNTNFE9PSIsInZhbHVlIjoieExOMVhyd0xtZjJ3L2c1T0NGcmJzakg4VFJPRWJyNVlQRTlNV3prZmtPa2UwVUFwWndlSUNlbzMvbnRGbHUwNXhGRU5XQ3RjZ0QvSVQzR2F4YldCc3ViekJVdGtGT1JhbkcxVXBmTGxXUHc9IiwibWFjIjoiYWVjNTAyNDBlNDI3YjhlYzIwOTc2NzBkODJjNjVhMWJlYmQ0MmE5NmMzZTYwNzczNDcwMDZiZDE1NGNmNTc0OCIsInRhZyI6IiJ9" },
+  { title: "How to tame labour unrest and make employees happy", outlet: "The Standard", date: "5 Jan 2014", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6IjVhZ3l5c2l1aG9nTjZsVjJmZk9oMVE9PSIsInZhbHVlIjoiVjNqK2h5aXl3bXl1c2h0dG9vK3VtRjB3PT0iLCJtYWMiOiJhYjE4ODQyYzA4ODg5YjEwODQxYjA4ODg1ODQyMzE1YjE4MjM0ODg5NDI4MDU1NjA5ODQyNDUxNWU3ZDEzN2EwN2M0ODg5ZDEzIn0=" },
+  { title: "How about trade unions creating a ‘strike fund’ for their members?", outlet: "The Standard", date: "5 Aug 2013", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6IjVhZ3l5c2l1aG9nTjZsVjJmZk9oMVE9PSIsInZhbHVlIjoiVjNqK2h5aXl3bXl1c2h0dG9vK3VtRjB3PT0iLCJtYWMiOiJhYjE4ODQyYzA4ODg5YjEwODQxYjA4ODg1ODQyMzE1YjE4MjM0ODg5NDI4MDU1NjA5ODQyNDUxNWU3ZDEzN2EwN2M0ODg5ZDEzIn0=" },
+  { title: "Dear Mr. President, don’t discriminate private school children on laptops", outlet: "The Standard", date: "11 Apr 2013", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6IlBRTE5mcWRrL1p5NHg0TXQzUmpyc0E9PSIsInZhbHVlIjoieGh1NkdQdWZzY1dnWHlNRVBlT0FMdTdYNEovbUhPTlpuTFROYnRZSEdSTHRtdGo2WWwrNTdlbzdYaEZhNlVMQk83MUszTG5ObE02M3VSWnIzbm8rbzBmV3Z4VDZQMlhMbGdkeHVPanVWdjg9IiwibWFjIjoiMzc4NDZkMjc2MTkzYjZhODMzNWE2ZDlmMTJjMzdlNjFhODU2YTQxMDBjYWI4ZGQwNjEzZjE1NmUxY2VlNmUyMyIsInRhZyI6IiJ9" },
+  { title: "Strikes still remain an option of last resort in industrial disputes", outlet: "The Standard", date: "8 Sep 2012", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6IjBqSlVRR25LLytQS0lSaXpVV2I2cEE9PSIsInZhbHVlIjoiQmhDdWpxb3BGVDcwTkYxSitSZVUxaXcvVDMvS2FpckF6cUFUMlZucVdvOG1JN3g1SW1wSlRGWGord1BWM2RqOXJtTElwbVllN24zVjRqTG55SmxwVkM4K1NXYjNXM0VtMXB3TUY2SUZjYWc9IiwibWFjIjoiMDk2ZDZlMmJmZGE0MWE3MDcyOTQxMTJiZWMzY2ExZjdkZjkxMjExMGM3MTI1YWJjYThkYzRjODNkNjEyZjZmYyIsInRhZyI6IiJ9" },
+  { title: "Vet all Industrial Court judges too", outlet: "The Standard", date: "23 Mar 2012", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6InlZVmFHV2tSM2E3NWpJSllRak5NaEE9PSIsInZhbHVlIjoiWjgrVGRxYnNFYzlYSC9vTlV5Z0xIc0ZTZ0pWdFMwU2ozNmp2NXBXSytiRjkyUnF6Q21JVVZIcndhZ2M1aU9sbzlzQXdKWnhNR04rd0VFMlZWd3RnMEZIcU9PVHNXcnNyMGhZb0FXUUVuUDA9IiwibWFjIjoiNDg3YWM2ZTIwYTYyNzg3OTc1Yjg3NWViOGY0MDkwMzA0MzFlYTljY2M0YzczZTgwZTczMGVmYjNlMWMyNTBkOSIsInRhZyI6IiJ9" },
+  { title: "Why justice must precede peace", outlet: "The Standard", date: "28 Feb 2012", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6Ii9DU3Y5WER1dzcyRHNZS1d3VVpZWmc9PSIsInZhbHVlIjoiU2JTb01OelpHQUY2OWJkc1JTbUNZWFVRUk1OSmxycHNYOHczNWVmcmlvMU9TSXlIbmtKc0haRVorQnNiR2NiekNwajhwc1lhbGFNOXdscUNRSjh3V2QyKzQ1aWNGZ0RQRGR1eGVJUWszM2M9IiwibWFjIjoiZTAwODhkNzNjOTMxZGI3NTQ3MjE4ZGUxYTg0MjY3NzdhYjM3MGI3YjMxYzNhNmQwODhlNzdkNmM4ZWE3MWYwZCIsInRhZyI6IiJ9" },
   { title: "Who is really benefiting from EPZs in Kenya?", outlet: "Business Daily Africa", date: "4 Jan 2012", link: "https://www.businessdailyafrica.com/bd/opinion-analysis/who-is-really-benefiting-from-epzs-in-kenya--3741736" },
-  { title: "Weekly Columnist (Governance & Human Rights)", outlet: "Business Daily Newspaper", date: "2011-2012", link: "https://www.businessdailyafrica.com/bd/opinion-analysis/columnists/" },
+  { title: "The right to life versus the right to strike", outlet: "Business Daily Africa", date: "14 Dec 2011", link: "https://www.businessdailyafrica.com/bd/opinion-analysis/columnists/the-right-to-life-versus-the-right-to-strike-1997136" },
+  { title: "Women should demand gender parity", outlet: "Business Daily Newspaper", date: "23 Nov 2011", link: "https://www.businessdailyafrica.com/bd/opinion-analysis/columnists/women-should-demand-gender-parity--1996032" },
+  { title: "Labour Institutions Act must be in line with Constitution", outlet: "The Standard", date: "20 Mar 2011", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6ImxUU3JxNmVEdXh4T2szaGN2cnZ3Snc9PSIsInZhbHVlIjoicGdaUnJ0dVc1b21OWk9YR1hKcTRLNzFhR0tyTFhuOTZ3MGlaRGdvWEpUZ1R5U1NhazA2L1F4YnNNM0hJbU5Zb0JoTlM0dGNnQzFIZlhTUk5PVFJmbGFoQmFncEx0bUgySkc2dnM5TDViMEE9IiwibWFjIjoiNzhlNGUyMGUxYjBkMjkyY2M4MGRhNjRkYjRhZmFmMTliYzM5N2I3M2RkODkzNGQzMmMwOTFiMjk2Yzg3NjM0ZiIsInRhZyI6IiJ9" },
+  { title: "Trade unions’ elections a sham’", outlet: "The Standard", date: "4 Feb 2011", link: "https://www.standardmedia.co.ke/sso/?content=eyJpdiI6IlBtY2FHbUkrTTdQY1lCbjRLbFdCNUE9PSIsInZhbHVlIjoiTStlZTc3eEdQeWdWSmhMelZlbkpReWFha3BJU3JoQ25DbjlqNm9vZHZjU3FNeDdTck1tUkk1Z1ZtNDgxTkp1ZDQ2UlhuZTBla29rZE1MTmszNUtSWFpiS0tGOVZEdGpONHpSRFNERDU1NHc9IiwibWFjIjoiMzIyMmViMmQ2YzUxOTY1MjQ4OWViOGI0OTNiN2M3NDY1NmQzYjMxMWNlMWIxM2ZkYmIzYWY5MmIwZDg2MGYxNSIsInRhZyI6IiJ9" },
 ];
 
 export const affiliations = [
