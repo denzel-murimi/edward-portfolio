@@ -111,7 +111,7 @@ export const experience = [
     id: "munyao-2016",
     role: "Practicing Advocate & Partner",
     company: "Munyao Kayugira and Company Advocates",
-    dates: "Jan 2016 – Aug 2017",
+    dates: "Jan 2016 – to date",
     description: "Specialized in Constitutional law, administrative law, employment law, and general commercial litigation.",
     tags: ["Litigation", "Commercial Law", "Human Rights"]
   },
@@ -179,7 +179,7 @@ export const publications = [
       { title: "How long is (not) too long before filing an application at the African Court? Evidentiary challenges for incarcerated applicants", venue: "PhD Thesis (Ghent University)", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
       { title: "Youth mobilities and belonging in and out of a Kenyan urban ‘hood’", venue: "Rise Africa Discussion Series", year: "2021", link: "https://riseafrica.iclei.org/thought-pieces/#1627481660341-bd1190a3-a204" },
       { title: "Legal editor for Kenyan judiciary’s first Bench book on electoral disputes resolution.  ", venue: "Kenyan Judiciary Bench Book on Electoral Disputes Resolution", year: "2017", link: "https://judiciary.go.ke/download/bench-book-on-electoral-disputes-resolution/" },
-      { title: "Developing Benchmarks and Indicators Under ACDEG to Advance the Rule of Law in Africa.", venue: "Faculty of Law, University of Pretoria.", year: "2017" },
+      { title: "Slum Upgrading in Kenya: A Double-Edged Sword for the Right to Adequate Housing", venue: "Law Society of Kenya Journal.", year: "2017" },
     ]
   },
   {
@@ -187,9 +187,11 @@ export const publications = [
     items: [
       { title: "Tanzania and the African Union’s Blind Spots on Democratic Backsliding", venue: "VerfBlog", year: "2025", link: "https://verfassungsblog.de/african-union-unconstitutional-changes-of-government/" },
       { title: "State-sanctioned human rights violations in Kenya: countering repression with resistance", venue: "AfricLaw", year: "2025", link: "https://africlaw.com/2025/08/29/state-sanctioned-human-rights-violations-in-kenya-countering-repression-with-resistance/" },
+      { title: "Authored the Afterword in the book by Tatiana Thieme: Hustle Urbanism: Making Life work in Nairobi", venue: "University of Minnesota Press", year: "2025", link: "https://www.upress.umn.edu/9781517917999/hustle-urbanism/" },
       { title: "Re-Imagining Standards of Fairness in Open Source Investigations", venue: "Opinio Juris", year: "2023", link: "https://opiniojuris.org/2023/02/10/symposium-on-fairness-equality-and-diversity-in-open-source-investigations-re-imagining-standards-of-fairness-in-open-source-investigations-a-commentary-on-fact-finding-in-the-tigray-conflict/" },
       { title: "Evidentiary challenges for incarcerated applicants at the African Court", venue: "Blog Post", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
       { title: "Advancing the Right to Demonstrate in Kenya Through Negotiated Management", venue: "Palgrave Macmillan (Book Chapter)", year: "2020", link: "https://link.springer.com/chapter/10.1007/978-3-030-27049-0_8" },
+      { title: "Corruption and the right to vote in free and fair elections in Africa: is the will of the people on auction?", venue: "African Human Rights Yearbook 375-399.", year: "2018", link: "https://www.ahry.up.ac.za/en/murimi-e-k-kinyunyu-s" },
       { title: "Arresting Corruption in Africa: Role of the Youth", venue: "Institute for Security Studies (Policy Brief)", year: "2018", link: "https://issafrica.org/research/policy-brief/arresting-corruption-in-africa-role-of-the-youth" },
       { title: "Beyond Rhetoric – Engaging Africa’s Youth in Democratic Governance", venue: "Institute for Security Studies ", year: "2017", link: "https://issafrica.org/research/policy-brief/beyond-rhetoric-engaging-africas-youth-in-democratic-governance" },
 
@@ -225,4 +227,24 @@ export const affiliations = [
   "East African Law Society (Member)",
   "Agora Strategy (Advisor)",
   "African Human Rights Law Journal (Reviewer)"
+];
+
+
+export const contactInfo = [
+  {
+    city: "Nairobi, Kenya",
+    affiliation: "Munyao Kayugira & Company Advocates",
+    address: "Lower Hill Duplex, 2nd Floor, Room 51, Bunyala Road",
+    email: "edward@smkadvocates.com",
+    phone: "+254 723 653 745",
+    type: "Legal Practice"
+  },
+  {
+    city: "Amsterdam, Netherlands",
+    affiliation: "Amsterdam Center for International Law",
+    address: "University of Amsterdam, Faculty of Law, REC A, Room 10.02, Nieuwe Achtergracht 166, 1018 WV",
+    email: "e.k.murimi@uva.nl",
+    phone: "+31 6 26 26 78 52",
+    type: "Academic Research"
+  }
 ];

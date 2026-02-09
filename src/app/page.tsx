@@ -1,8 +1,9 @@
 // app/page.tsx
-import { profile, experience, education, publications, certifications, consultancies, media } from '../../lib/data';
+import { profile, experience, education, publications, certifications, consultancies, media,contactInfo } from '../../lib/data';
 import Image from 'next/image'; 
-import { Mail, MapPin, Linkedin, Twitter, ArrowUpRight, Briefcase, GraduationCap, BookOpen, BadgeCheck, Mic } from "lucide-react";
+import { Mail, MapPin, Linkedin, ArrowUpRight, Briefcase, GraduationCap, BookOpen, BadgeCheck, Mic } from "lucide-react";
 import { MotionSection } from './components/MotionSection';
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 14 },
@@ -85,7 +86,8 @@ export default function Home() {
                 href={profile.socials.twitter}
                 className="inline-flex items-center gap-2 rounded-full border border-black/5 bg-white px-3 py-2 text-sm text-gray-700 hover:text-legal-navy hover:bg-gray-50 transition"
               >
-                <Twitter className="h-4 w-4" /> Twitter
+                <img src="XLogo.svg" alt="X Logo" className="h-4 w-4" />
+                <span className="h-4 w-4">x.com</span>
               </a>
             </div>
 
@@ -93,7 +95,7 @@ export default function Home() {
         </div>
 
         <nav className="mt-12 hidden md:block space-y-4">
-          {['About', 'Experience', 'Education', 'Publications'].map((item) => (
+          {['About', 'Experience', 'Education', 'Publications', 'Contact'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="block text-gray-400 hover:text-black hover:translate-x-2 transition-transform">
               {item}
             </a>
@@ -138,7 +140,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <div className="rounded-3xl border border-black/5 bg-white/75 backdrop-blur shadow-sm p-7 md:p-10">
-              <SectionTitle icon={Briefcase} title="Selected Experience" />
+              <SectionTitle icon={Briefcase} title="Work Experience" />
               <div className="grid gap-6">
                 {experience.map((job) => (
                   <div
@@ -228,7 +230,7 @@ export default function Home() {
     transition={{ duration: 0.5 }}
   >
   <h3 className="font-serif text-2xl text-legal-navy border-b-2 border-legal-navy/10 pb-4 mb-8">
-    Select Consultancies
+    Selected Consultancies
   </h3>
   <ul className="space-y-4">
     {consultancies.map((item, idx) => (
@@ -293,6 +295,46 @@ export default function Home() {
             ))}
           </ul>
         </MotionSection>
+
+        {/* CONTACT SECTION */}
+        <section id="contact" className="mb-20 max-w-4xl">
+          <h3 className="font-serif text-2xl text-legal-navy border-b-2 border-legal-navy/10 pb-4 mb-8">
+            Contact
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {contactInfo.map((office, idx) => (
+    // Changed bg-legal-navy to bg-slate-900 (Standard Dark Blue/Black)
+    <div key={idx} className="bg-slate-900 text-white p-8 rounded-sm shadow-lg relative overflow-hidden group">
+      
+      {/* City Label */}
+      <h4 className="text-yellow-600 font-bold tracking-widest text-xs uppercase mb-2">
+        {office.city}
+      </h4>
+      
+      {/* Firm/University Name */}
+      <h5 className="font-serif text-xl font-bold mb-4 leading-tight text-white">
+        {office.affiliation}
+      </h5>
+      
+      {/* Address & Contact Info */}
+      <div className="space-y-3 text-sm text-gray-300">
+        <p className="border-l-2 border-yellow-600 pl-3 leading-relaxed">
+          {office.address}
+        </p>
+        <div className="pt-2 flex flex-col gap-1">
+          <a href={`mailto:${office.email}`} className="hover:text-yellow-500 transition flex items-center gap-2">
+            <span className="text-yellow-600">✉</span> {office.email}
+          </a>
+          <a href={`tel:${office.phone.replace(/\s/g, '')}`} className="hover:text-yellow-500 transition flex items-center gap-2">
+            <span className="text-yellow-600">📞</span> {office.phone}
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+        </section>
         
         {/* FOOTER */}
         <footer className="pt-10 border-t border-gray-200 text-sm text-gray-500">
