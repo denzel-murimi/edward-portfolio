@@ -11,7 +11,15 @@ export const profile = {
   email: "kahuthia.edward@gmail.com",
   phone: "+254 723 653 745",
   photo: "/dkt.jpeg",
-  about: "I am a legal scholar and practitioner dedicated to strengthening the institutional effectiveness of human rights systems in Africa. Currently serving as a Postdoctoral Researcher at the Amsterdam Centre for International Law, I lead the examination of the African human rights system’s response to democratic backsliding. My experience spans from grassroots legal aid in Kenya to high-level advisory roles with the African Union and the African Court on Human and Peoples’ Rights.",
+about: `Dr. Edward Kahuthia Murimi is a Kenyan human rights scholar, advocate, and policy expert specializing in international and African human rights law, democratic governance, and accountability.
+
+He is currently a Postdoctoral Researcher at the Amsterdam Centre for International Law, University of Amsterdam, where he leads the examination of the African human rights system within a comparative project assessing the effectiveness of regional human rights regimes in contexts of democratic backsliding and systemic violations.
+
+He holds a Doctor of Law degree from Ghent University, where his doctoral research critically analyzed the evidentiary regime of the African Court on Human and Peoples’ Rights, combining doctrinal analysis with empirical fieldwork at the Court in Arusha, Tanzania.
+
+Dr. Murimi brings over a decade of experience spanning academia, legal practice, civil society, and international development cooperation. He has served as a Technical Advisor with GIZ Kenya, a consultant to the African Union Commission, a Program advisor at the Kenya Human Rights Commission and a practicing advocate in Nairobi, contributing to legal and institutional reforms that advance transparency, access to information, and the rule of law.
+
+A published author and regular commentator on governance and human rights in Africa, his work bridges rigorous scholarship and practical engagement, reflecting a sustained commitment to strengthening democratic institutions and protecting fundamental rights.`,
   socials: {
     linkedin: "https://www.linkedin.com/in/dr-edward-murimi-a3411a4a/", 
     twitter: "https://x.com/edwardkahuthia", 

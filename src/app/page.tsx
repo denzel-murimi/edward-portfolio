@@ -123,7 +123,7 @@ export default function Home() {
               <h2 className="font-serif text-3xl md:text-5xl text-legal-navy leading-tight">
                 {profile.headline}
               </h2>
-              <p className="mt-6 text-base md:text-lg leading-relaxed text-gray-700">
+              <p className="mt-6 text-base md:text-lg leading-relaxed text-gray-700 whitespace-pre-line">
                 {profile.about}
               </p>
             </div>
