@@ -41,7 +41,7 @@ export default function Home() {
   <span className="font-bold text-lg text-slate-800">EKM</span>
   <div className="flex gap-4 text-sm font-medium text-slate-600">
     <a href="#about" className="hover:text-blue-600">About</a>
-    <a href="#experience" className="hover:text-blue-600">Experience</a>
+    <a href="#experience" className="hover:text-blue-600">Exp</a>
     <a href="#education" className="hover:text-blue-600">Education</a>
     <a href="#publications" className="hover:text-blue-600">Publications</a>
     <a href="#contact" className="hover:text-blue-600">Contact</a>
@@ -344,10 +344,10 @@ export default function Home() {
         />
         {/* Dark Overlay Gradient (Visible on Hover) */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
             Ghent, Belgium
           </p>
-          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
             Keynote at Ghent University
           </h3>
         </div>
@@ -361,10 +361,10 @@ export default function Home() {
           className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
             Kenyan Judiciary
           </p>
-          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
             Admission to the Kenya School of Law Ceremony
           </h3>
         </div>
@@ -378,10 +378,10 @@ export default function Home() {
           className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
             Nairobi, Kenya
           </p>
-          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
             Facilitating a Legal Consultation Workshop
           </h3>
         </div>
@@ -393,10 +393,10 @@ export default function Home() {
           className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
             Nairobi, Kenya
           </p>
-          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
             Media Coverage 
           </h3>
         </div>
@@ -408,10 +408,10 @@ export default function Home() {
           className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
             Nairobi, Kenya
           </p>
-          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
             Facilitating a Legal Consultation Workshop
           </h3>
         </div>
