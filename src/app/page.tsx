@@ -36,6 +36,17 @@ function SectionTitle({
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col md:flex-row">
+      {/* Mobile Navigation Bar - Only visible on small screens */}
+<div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 p-4 flex justify-between items-center shadow-sm">
+  <span className="font-bold text-lg text-slate-800">EKM</span>
+  <div className="flex gap-4 text-sm font-medium text-slate-600">
+    <a href="#about" className="hover:text-blue-600">About</a>
+    <a href="#experience" className="hover:text-blue-600">Experience</a>
+    <a href="#education" className="hover:text-blue-600">Education</a>
+    <a href="#publications" className="hover:text-blue-600">Publications</a>
+    <a href="#contact" className="hover:text-blue-600">Contact</a>
+  </div>
+</div>
       
       {/* LEFT SIDEBAR / HEADER */}
       <aside className="w-full md:w-1/3 lg:w-1/4 bg-legal-navy text-black p-8 md:fixed md:h-screen overflow-y-auto">
@@ -236,34 +247,24 @@ export default function Home() {
     {consultancies.map((item, idx) => (
       <li key={idx} className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm">
         <span className="font-bold text-legal-navy min-w-[150px]">{item.role}</span>
-        <span className="text-gray-600">
-          <span className="font-semibold text-legal-gold">{item.client}:</span> {item.details}
-        </span>
+        {item.items ? (
+          <ul className="space-y-2 flex-1">
+            {item.items.map((subItem, subIdx) => (
+              <li key={subIdx} className="text-gray-600">
+                <span className="font-semibold text-legal-gold">{subItem.client}:</span> {subItem.details}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <span className="text-gray-600">
+            <span className="font-semibold text-legal-gold">{item.client}:</span> {item.details}
+          </span>
+        )}
       </li>
     ))}
   </ul>
 </MotionSection>
 
-{/* MEDIA */}
-<MotionSection
-    className="mb-10 max-w-3xl scroll-mt-24"
-    variants={fadeUp}
-    initial="hidden"
-    animate="show"
-    transition={{ duration: 0.5 }}
-  >
-  <h3 className="font-serif text-2xl text-legal-navy border-b-2 border-legal-navy/10 pb-4 mb-8">
-    Media & Commentary
-  </h3>
-  <div className="grid gap-3">
-    {media.map((item, idx) => (
-      <a key={idx} target='_blank' rel="noopener noreferrer" href={item.link} className="flex justify-between items-center group border-b border-gray-100 pb-2 flex justify-between items-center group rounded-xl px-3 py-2 hover:bg-white transition">
-        <span className="text-gray-700 group-hover:text-legal-navy transition">{item.title}</span>
-        <span className="text-xs text-gray-400 italic shrink-0 ml-4">{item.outlet}, {item.date}</span>
-      </a>
-    ))}
-  </div>
-</MotionSection>
 
         {/* PUBLICATIONS SECTION */}
         <MotionSection
@@ -285,8 +286,8 @@ export default function Home() {
                   {pub.items.map((item, itemIdx) => (
                     <li key={itemIdx} className="group cursor-pointer">
                       <a target='_blank' rel="noopener noreferrer" href={item.link} className="block hover:bg-white p-4 -mx-4 rounded-lg transition block bg-white/0 hover:bg-white p-4 -mx-4 rounded-2xl transition shadow-sm hover:shadow-md border border-transparent hover:border-black/5">
-                        <h5 className="font-bold text-legal-navy group-hover:text-legal-gold transition">{item.title}</h5>
-                        <p className="text-sm text-gray-500 italic mt-1">{item.venue}, {item.year}</p>
+                      <h5 className="font-bold text-legal-navy group-hover:text-legal-gold transition" dangerouslySetInnerHTML={{ __html: item.title }}/>                        
+                      <p className="text-sm text-gray-500 italic mt-1">{item.venue}, {item.year}</p>
                       </a>
                     </li>
                   ))}
@@ -295,6 +296,131 @@ export default function Home() {
             ))}
           </ul>
         </MotionSection>
+
+        
+{/* MEDIA */}
+<MotionSection
+    className="mb-10 max-w-3xl scroll-mt-24"
+    variants={fadeUp}
+    initial="hidden"
+    animate="show"
+    transition={{ duration: 0.5 }}
+  >
+  <h3 className="font-serif text-2xl text-legal-navy border-b-2 border-legal-navy/10 pb-4 mb-8">
+    Newspaper Articles
+  </h3>
+  <div className="grid gap-3">
+    {media.map((item, idx) => (
+      <a key={idx} target='_blank' rel="noopener noreferrer" href={item.link} className="flex justify-between items-center group border-b border-gray-100 pb-2 flex justify-between items-center group rounded-xl px-3 py-2 hover:bg-white transition">
+        <span className="text-gray-700 group-hover:text-legal-navy transition">{item.title}</span>
+        <span className="text-xs text-gray-400 italic shrink-0 ml-4">{item.outlet}, {item.date}</span>
+      </a>
+    ))}
+  </div>
+</MotionSection>
+
+{/* --- ENTICING PHOTO GALLERY --- */}
+<section className="py-20 bg-slate-50" id="gallery">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+        Gallery
+      </h2>
+      <p className="text-slate-600 max-w-2xl mx-auto">
+        Visual highlights from my regional dialogues, workshops, and high-level policy engagements.
+      </p>
+    </div>
+
+    {/* Masonry Grid Layout */}
+    <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+
+      {/* PHOTO CARD 1: Speaking Engagement */}
+      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+        {/* Image with Zoom Effect */}
+        <img 
+          src="/lecture.jpeg"   
+          alt="Ghent Lecture" 
+          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
+        />
+        {/* Dark Overlay Gradient (Visible on Hover) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            Ghent, Belgium
+          </p>
+          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+            Keynote at Ghent University
+          </h3>
+        </div>
+      </div>
+
+      {/* PHOTO CARD 2: Workshop Facilitation */}
+      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+        <img 
+          src="/admission.jpeg" 
+          alt="Admission to the Bar" 
+          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            Kenyan Judiciary
+          </p>
+          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+            Admission to the Kenya School of Law Ceremony
+          </h3>
+        </div>
+      </div>
+
+      {/* PHOTO CARD 3: Portrait / Candid */}
+      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+        <img 
+          src="/workshop.jpeg" 
+          alt="Legal Consultation" 
+          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            Nairobi, Kenya
+          </p>
+          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+            Facilitating a Legal Consultation Workshop
+          </h3>
+        </div>
+      </div>
+      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+        <img 
+          src="/media.jpeg" 
+          alt="Media Coverage" 
+          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            Nairobi, Kenya
+          </p>
+          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+            Media Coverage 
+          </h3>
+        </div>
+      </div>
+      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+        <img 
+          src="/workshop2.jpeg" 
+          alt="Legal Consultation" 
+          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            Nairobi, Kenya
+          </p>
+          <h3 className="text-white font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+            Facilitating a Legal Consultation Workshop
+          </h3>
+        </div>
+      </div>
+      {/* Add more cards using the same pattern below if needed */}
+
+    </div>
+  </div>
+</section>
 
         {/* CONTACT SECTION */}
         <section id="contact" className="mb-20 max-w-4xl">

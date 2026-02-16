@@ -107,6 +107,7 @@ export const experience = [
     description: "Provided advisory services to the Office of the Ombudsman (CAJ). Supported county governments in mainstreaming good governance in agriculture.",
     tags: ["Governance", "Public Administration", "Advisory"]
   },
+  
   {
     id: "au-2016",
     role: "Consultant (Seconded)",
@@ -122,6 +123,24 @@ export const experience = [
     dates: "Jan 2016 – to date",
     description: "Specialized in Constitutional law, administrative law, employment law, and general commercial litigation.",
     tags: ["Litigation", "Commercial Law", "Human Rights"]
+  },
+  {
+    id: "editor-2017",
+    role: "Legal Editor",
+    company: "Kenyan Judiciary",
+    dates: "2017- Present",
+    description: "Legal editor for Kenyan judiciary’s first Bench book on electoral disputes resolution.",
+    tags: ["Legal Editing", "Electoral Law", "Judiciary"]
+
+  },
+  {
+    id: "reviewer-2024",
+    role: "Journal Reviewer",
+    company: "African Human Rights Law Journal",
+    dates: "2024-Present",
+    description: "Peer reviewer for the African Human Rights Law Journal, providing critical feedback on submissions related to human rights law and practice in Africa.",
+    tags: ["Peer Review", "Human Rights", "Academic Publishing"]
+
   },
   {
     id: "khrc-2014",
@@ -156,14 +175,51 @@ export const consultancies = [
     details: "For an Application filed at the African Court on Human and Peoples’ Rights (Ongoing)."
   },
   {
-    role: "Rapporteur",
-    client: "African Union",
-    details: "Served as Rapporteur for multiple high-level dialogues including the Anti-Corruption Dialogue (2018), Humanitarian Symposium (2019), and Youth Consultation (2019)."
-  },
+  role: "Rapporteur",
+  items: [
+    {
+      client: "African Union",
+      details: "2018 African Union Annual African Anti-Corruption Dialogue on Corruption Measurement held from 2nd to 4th October 2018 in Arusha, Tanzania."
+    },
+    {
+      client: "African Union",
+      details: "7th Annual Humanitarian Symposium held from 18th to 20th November 2019 in Nairobi, Kenya."
+    },
+    {
+      client: "African Union",
+      details: "Continental Youth Consultation: Youth and Forced Displacement in Africa held on 2nd-3rd December 2019 in Kampala, Uganda."
+    },
+    {
+      client: "African Union",
+      details: "8th High Level Dialogue on the theme – 'The Year of Refugees, Returnees and Internally Displaced Persons: Towards Durable Solutions to Forced Displacement in Africa' held on 4th -6th December 2019 in Kampala, Uganda."
+    },
+    {
+      client: "Solidarity for African Women's Rights (SOAWR)",
+      details: "Annual General Meeting held on 27th -29th January 2020 in Nairobi, Kenya."
+    },
+    {
+      client: "International Development Law Organization (IDLO)",
+      details: "National Gender and Equality Commission's Training on Cultural and Traditional Structures on Equality and Inclusion in Elections in May 2017 in Murang'a, Kenya."
+    }
+  ]
+},
   {
     role: "Consultant",
     client: "Hivos Foundation",
     details: "Developed Position Paper on 'Workplace Sexual Harassment Policies in Kenya’s Horticulture Sector' (2016)."
+  },
+  {
+    role: "Workshop Facilitator",
+    items: [
+      {
+        client: "Hivos Foundation - Women@Work Campaign",
+        details: "Conducted a workshop in Lusaka, Zambia for Civil Society actors drawn from East and Central Africa on International and Regional Frameworks on Corporate Accountability."
+      },
+      {
+        client: "Kenya Human Rights Commission",
+        details: "Facilitated human rights education workshops in Meru and Laikipia Counties in Kenya."
+      }
+    ]
   },
   {
     role: "Researcher",
@@ -179,27 +235,25 @@ export const consultancies = [
 
 export const publications = [
   {
-    category: "Academic & Journals",
+    category: "Academic ",
     items: [
       { title: "Reviewer for the African Human Rights Law Journal ", venue: "African Human Rights Law Journal", year: "2024-Present" },
+      { title: "Authored the Afterword in the book by Tatiana Thieme- <em>Hustle Urbanism: Making Life work in Nairobi</em>", venue: "University of Minnesota Press", year: "2025", link: "https://www.upress.umn.edu/9781517917999/hustle-urbanism/" }, 
       { title: "Fluctuating standards of proof at the African Court: a case for principled flexibility", venue: "African Human Rights Yearbook", year: "2023", link: "https://www.ahry.up.ac.za/images/ahry/volume7/Murimi_2023.pdf" },
-      { title: "Applying an Evidentiary Lens to the Conflict in Ethiopia: Issues Arising from Investigative Mandates", venue: "PhD Thesis (Ghent University)", year: "2022", link: "https://dissect.ugent.be/applying-an-evidentiary-lens-to-the-conflict-in-ethiopia-issues-arising-from-investigative-mandates/" },
-      { title: "How long is (not) too long before filing an application at the African Court? Evidentiary challenges for incarcerated applicants", venue: "PhD Thesis (Ghent University)", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
       { title: "Youth mobilities and belonging in and out of a Kenyan urban ‘hood’", venue: "Rise Africa Discussion Series", year: "2021", link: "https://riseafrica.iclei.org/thought-pieces/#1627481660341-bd1190a3-a204" },
-      { title: "Legal editor for Kenyan judiciary’s first Bench book on electoral disputes resolution.  ", venue: "Kenyan Judiciary Bench Book on Electoral Disputes Resolution", year: "2017", link: "https://judiciary.go.ke/download/bench-book-on-electoral-disputes-resolution/" },
+      { title: "Advancing the Right to Demonstrate in Kenya Through Negotiated Management", venue: "Palgrave Macmillan (Book Chapter)", year: "2020", link: "https://link.springer.com/chapter/10.1007/978-3-030-27049-0_8" },
+      { title: "Corruption and the right to vote in free and fair elections in Africa: is the will of the people on auction?", venue: "African Human Rights Yearbook 375-399.", year: "2018", link: "https://www.ahry.up.ac.za/en/murimi-e-k-kinyunyu-s" },
       { title: "Slum Upgrading in Kenya: A Double-Edged Sword for the Right to Adequate Housing", venue: "Law Society of Kenya Journal.", year: "2017" },
     ]
   },
   {
-    category: "Policy Briefs & Commentary",
+    category: "Policy Briefs & Blog Posts",
     items: [
       { title: "Tanzania and the African Union’s Blind Spots on Democratic Backsliding", venue: "VerfBlog", year: "2025", link: "https://verfassungsblog.de/african-union-unconstitutional-changes-of-government/" },
       { title: "State-sanctioned human rights violations in Kenya: countering repression with resistance", venue: "AfricLaw", year: "2025", link: "https://africlaw.com/2025/08/29/state-sanctioned-human-rights-violations-in-kenya-countering-repression-with-resistance/" },
-      { title: "Authored the Afterword in the book by Tatiana Thieme: Hustle Urbanism: Making Life work in Nairobi", venue: "University of Minnesota Press", year: "2025", link: "https://www.upress.umn.edu/9781517917999/hustle-urbanism/" },
       { title: "Re-Imagining Standards of Fairness in Open Source Investigations", venue: "Opinio Juris", year: "2023", link: "https://opiniojuris.org/2023/02/10/symposium-on-fairness-equality-and-diversity-in-open-source-investigations-re-imagining-standards-of-fairness-in-open-source-investigations-a-commentary-on-fact-finding-in-the-tigray-conflict/" },
-      { title: "Evidentiary challenges for incarcerated applicants at the African Court", venue: "Blog Post", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
-      { title: "Advancing the Right to Demonstrate in Kenya Through Negotiated Management", venue: "Palgrave Macmillan (Book Chapter)", year: "2020", link: "https://link.springer.com/chapter/10.1007/978-3-030-27049-0_8" },
-      { title: "Corruption and the right to vote in free and fair elections in Africa: is the will of the people on auction?", venue: "African Human Rights Yearbook 375-399.", year: "2018", link: "https://www.ahry.up.ac.za/en/murimi-e-k-kinyunyu-s" },
+      { title: "How long is (not) too long before filing an application at the African Court? Evidentiary challenges for incarcerated applicants", venue: "Blog Post", year: "2022", link: "https://dissect.ugent.be/how-long-is-not-too-long-before-filing-an-application-at-the-african-court-evidentiary-challenges-for-incarcerated-applicants/" },
+      { title: "Applying an Evidentiary Lens to the Conflict in Ethiopia: Issues Arising from Investigative Mandates", venue: "Blog Post", year: "2022", link: "https://dissect.ugent.be/applying-an-evidentiary-lens-to-the-conflict-in-ethiopia-issues-arising-from-investigative-mandates/" },     
       { title: "Arresting Corruption in Africa: Role of the Youth", venue: "Institute for Security Studies (Policy Brief)", year: "2018", link: "https://issafrica.org/research/policy-brief/arresting-corruption-in-africa-role-of-the-youth" },
       { title: "Beyond Rhetoric – Engaging Africa’s Youth in Democratic Governance", venue: "Institute for Security Studies ", year: "2017", link: "https://issafrica.org/research/policy-brief/beyond-rhetoric-engaging-africas-youth-in-democratic-governance" },
 
