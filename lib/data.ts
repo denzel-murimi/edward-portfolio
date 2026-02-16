@@ -485,6 +485,13 @@ export const galleryImages = [
     category: "Workshops",
     location: "Nairobi, Kenya",
     title: "Attending a workshop in Nairobi, Kenya"
+  },
+  {
+    src: "/firm.jpeg",
+    alt: "Law Firm",
+    category: "Milestones",
+    location: "Nairobi, Kenya",
+    title: "Partner at Munyao Kayugira and Company Advocates law firm in Nairobi, Kenya"
   }
 
 ];
