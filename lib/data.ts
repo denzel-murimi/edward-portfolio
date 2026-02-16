@@ -17,7 +17,7 @@ He is currently a Postdoctoral Researcher at the Amsterdam Centre for Internatio
 
 He holds a Doctor of Law degree from Ghent University, where his doctoral research critically analyzed the evidentiary regime of the African Court on Human and Peoples’ Rights, combining doctrinal analysis with empirical fieldwork at the Court in Arusha, Tanzania.
 
-Dr. Murimi brings over a decade of experience spanning academia, legal practice, civil society, and international development cooperation. He has served as a Technical Advisor with GIZ Kenya, a consultant to the African Union Commission, a Program advisor at the Kenya Human Rights Commission and a practicing advocate in Nairobi, contributing to legal and institutional reforms that advance transparency, access to information, and the rule of law.
+Dr. Murimi brings over a decade of experience spanning academia, legal practice, civil society, and international development cooperation. He has served as a Technical Advisor with GIZ Kenya, a consultant to the African Union Commission, a Program Advisor at the Kenya Human Rights Commission and a practicing advocate in Nairobi, contributing to legal and institutional reforms that advance transparency, access to information, and the rule of law.
 
 A published author and regular commentator on governance and human rights in Africa, his work bridges rigorous scholarship and practical engagement, reflecting a sustained commitment to strengthening democratic institutions and protecting fundamental rights.`,
   socials: {
@@ -237,7 +237,6 @@ export const publications = [
   {
     category: "Academic ",
     items: [
-      { title: "Reviewer for the African Human Rights Law Journal ", venue: "African Human Rights Law Journal", year: "2024-Present" },
       { title: "Authored the Afterword in the book by Tatiana Thieme- <em>Hustle Urbanism: Making Life work in Nairobi</em>", venue: "University of Minnesota Press", year: "2025", link: "https://www.upress.umn.edu/9781517917999/hustle-urbanism/" }, 
       { title: "Fluctuating standards of proof at the African Court: a case for principled flexibility", venue: "African Human Rights Yearbook", year: "2023", link: "https://www.ahry.up.ac.za/images/ahry/volume7/Murimi_2023.pdf" },
       { title: "Youth mobilities and belonging in and out of a Kenyan urban ‘hood’", venue: "Rise Africa Discussion Series", year: "2021", link: "https://riseafrica.iclei.org/thought-pieces/#1627481660341-bd1190a3-a204" },
@@ -309,4 +308,183 @@ export const contactInfo = [
     phone: "+31 6 26 26 78 52",
     type: "Academic Research"
   }
+];
+
+export const galleryImages = [
+  {
+    src: "/lecture.jpeg",
+    alt: "Ghent Lecture",
+    category: "Lectures",
+    location: "Ghent University",
+    title: "Guest lecturer, Master of Laws class of 2024-2025"
+  },
+  {
+    src: "/admission.jpeg",
+    alt: "Admission to the Bar",
+    category: "Milestones",
+    location: "Kenyan Judiciary",
+    title: "Admission to the Bar, 23 January 2013"
+  },
+  {
+    src: "/workshop.jpeg",
+    alt: "Legal Consultation",
+    category: "Workshops",
+    location: "GIZ Kenya",
+    title: "Making remarks during a stakeholder consultation workshop"
+  },
+  {
+    src: "/media.jpeg",
+    alt: "Media Coverage",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Making Opening Remarks at the Launch of the Strategic Plan for the Commission on Administrative Justice"
+  },
+  {
+    src: "/workshop2.jpeg",
+    alt: "Legal Consultation",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Making remarks at a team meeting, Munyao Kayugira and Company Advocates"
+  },
+  {
+    src: "/k24.jpeg",
+    alt: "Media Coverage",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Interview with K24 TV on Workplace Discrimination"
+  },
+  {
+    src: "/giz.jpeg",
+    alt: "Media Coverage",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Facilitating a workshop on good governance in GIZ Kenya"
+  },
+  {
+    src: "/phd.jpeg",
+    alt: "PhD Defense",
+    category: "Milestones",
+    location: "Ghent University",
+    title: "PhD Defense, Ghent University, 27 March 2025"
+  },
+  {
+    src: "/phd2.jpeg",
+    alt: "PhD Defense",
+    category: "Milestones",
+    location: "Ghent University",
+    title: "Exam Committee, Ghent University, 27 March 2025"
+  },
+  {
+    src: "/work2.jpeg",
+    alt: "Workshop",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Facilitating a workshop "
+  },
+  {
+    src: "/ombuds.jpeg",
+    alt: "Ombudsman Workshop",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Facilitating a workshop for the Office of the Ombudsman (CAJ)"
+  },
+  {
+    src: "/ombuds2.jpeg",
+    alt: "Ombudsman Workshop",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Ombudsman Panel Discussion, CAJ Workshop"
+  },
+  {
+    src: "/ombuds3.jpeg",
+    alt: "Ombudsman Meeting",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Meeting with the Ombudsman, CAJ Workshop"
+  },
+  {
+    src: "/tweet.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/tweet2.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/tweet3.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/tweet4.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/tweet5.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/ombudstweet.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/AuTweet.jpeg",
+    alt: "Tweet Post",
+    category: "Featured",
+    location: "Nairobi, Kenya",
+    title: "Featured Tweet Post"
+  },
+  {
+    src: "/remarks.jpeg",
+    alt: "Remarks",
+    category: "Workshops",
+    location: "GIZ Kenya",
+    title: "Making remarks at a workshop in GIZ Kenya"
+  },
+  {
+    src: "/lec2.jpeg",
+    alt: "Lecture",
+    category: "Lectures",
+    location: "Ghent University",
+    title: "Guest lecturer, Master of Laws class of 2024-2025"
+  },
+  {
+    src: "/lec3.jpeg",
+    alt: "Lecture",
+    category: "Lectures",
+    location: "Ghent University",
+    title: "Guest lecturer, Master of Laws class of 2024-2025"
+  },
+  {
+    src: "/lec4.jpeg",
+    alt: "Lecture",
+    category: "Lectures",
+    location: "Ghent University",
+    title: "Guest lecturer, Master of Laws class of 2024-2025"
+  },
+  {
+    src: "/w4.jpeg",
+    alt: "Workshop Attendance",
+    category: "Workshops",
+    location: "Nairobi, Kenya",
+    title: "Attending a workshop in Nairobi, Kenya"
+  }
+
 ];

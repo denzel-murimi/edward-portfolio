@@ -3,7 +3,7 @@ import { profile, experience, education, publications, certifications, consultan
 import Image from 'next/image'; 
 import { Mail, MapPin, Linkedin, ArrowUpRight, Briefcase, GraduationCap, BookOpen, BadgeCheck, Mic } from "lucide-react";
 import { MotionSection } from './components/MotionSection';
-
+import Gallery from './components/gallery';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 14 },
@@ -320,107 +320,7 @@ export default function Home() {
 </MotionSection>
 
 {/* --- ENTICING PHOTO GALLERY --- */}
-<section className="py-20 bg-slate-50" id="gallery">
-  <div className="container mx-auto px-4 max-w-6xl">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-        Gallery
-      </h2>
-      <p className="text-slate-600 max-w-2xl mx-auto">
-        Visual highlights from my regional dialogues, workshops, and high-level policy engagements.
-      </p>
-    </div>
-
-    {/* Masonry Grid Layout */}
-    <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-
-      {/* PHOTO CARD 1: Speaking Engagement */}
-      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        {/* Image with Zoom Effect */}
-        <img 
-          src="/lecture.jpeg"   
-          alt="Ghent Lecture" 
-          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
-        />
-        {/* Dark Overlay Gradient (Visible on Hover) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
-            Ghent, Belgium
-          </p>
-          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
-            Keynote at Ghent University
-          </h3>
-        </div>
-      </div>
-
-      {/* PHOTO CARD 2: Workshop Facilitation */}
-      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        <img 
-          src="/admission.jpeg" 
-          alt="Admission to the Bar" 
-          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
-            Kenyan Judiciary
-          </p>
-          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
-            Admission to the Kenya School of Law Ceremony
-          </h3>
-        </div>
-      </div>
-
-      {/* PHOTO CARD 3: Portrait / Candid */}
-      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        <img 
-          src="/workshop.jpeg" 
-          alt="Legal Consultation" 
-          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
-            Nairobi, Kenya
-          </p>
-          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
-            Facilitating a Legal Consultation Workshop
-          </h3>
-        </div>
-      </div>
-      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        <img 
-          src="/media.jpeg" 
-          alt="Media Coverage" 
-          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
-            Nairobi, Kenya
-          </p>
-          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
-            Media Coverage 
-          </h3>
-        </div>
-      </div>
-      <div className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        <img 
-          src="/workshop2.jpeg" 
-          alt="Legal Consultation" 
-          className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-          <p className="text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
-            Nairobi, Kenya
-          </p>
-          <h3 className="text-white font-semibold text-lg translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75">
-            Facilitating a Legal Consultation Workshop
-          </h3>
-        </div>
-      </div>
-      {/* Add more cards using the same pattern below if needed */}
-
-    </div>
-  </div>
-</section>
+<Gallery />
 
         {/* CONTACT SECTION */}
         <section id="contact" className="mb-20 max-w-4xl">
