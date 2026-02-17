@@ -32,7 +32,7 @@ export const education = [
     institution: "Ghent University",
     location: "Belgium",
     year: "2021 – 2025",
-    details: "Thesis: 'Evidentiary regime of the African Court on Human and Peoples’ Rights' (DISSECT Project)."
+    details: "Thesis title - Evidence at the African Court on Human and Peoples’ Rights: The Case for an Equitable Applicant-Centred Approach as a Pathway to Substantively Fairer Decisions"
   },
   {
     degree: "Master of Laws (Distinction)",
