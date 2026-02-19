@@ -16,6 +16,29 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: 'Dr. Edward Kahuthia Murimi',
   description: 'Legal Scholar & Human Rights Practitioner.',
+  metadataBase: new URL("https://edwardmurimi.com"),
+  openGraph: {
+    title: "Dr. Edward Kahuthia Murimi | Portfolio",
+    description: "Legal Scholar & Human Rights Practitioner",
+    url: "https://edwardmurimi.com",
+    siteName: "Edward Murimi",
+    images: [
+      {
+        url: "/paps.jpeg", 
+        width: 1200,
+        height: 630,
+        alt: "Dr. Edward Kahuthia Murimi Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Edward Kahuthia Murimi",
+    description: "Legal Scholar & Human Rights Practitioner",
+    images: ["/paps.jpeg"],
+  },
 }
 
 export default function RootLayout({
