@@ -298,7 +298,8 @@ export const contactInfo = [
     address: "Lower Hill Duplex, 2nd Floor, Room 51, Bunyala Road",
     email: "edward@smkadvocates.com",
     phone: "+254 723 653 745",
-    type: "Legal Practice"
+    type: "Legal Practice",
+    link: "https://smkadvocates.com/"
   },
   {
     city: "Amsterdam, Netherlands",
@@ -306,7 +307,8 @@ export const contactInfo = [
     address: "University of Amsterdam, Faculty of Law, REC A, Room 10.02, Nieuwe Achtergracht 166, 1018 WV",
     email: "e.k.murimi@uva.nl",
     phone: "+31 6 26 26 78 52",
-    type: "Academic Research"
+    type: "Academic Research",
+    link:"https://acil.uva.nl/"
   }
 ];
 
@@ -358,7 +360,15 @@ export const galleryImages = [
     alt: "Media Coverage",
     category: "Workshops",
     location: "Nairobi, Kenya",
-    title: "Facilitating a workshop on good governance in GIZ Kenya"
+    title: "Remarks as the GIZ Representative in the collaboration with APSEA"
+  },
+  {
+    src: "/pretoria.jpeg",
+    alt: "Masters Graduation",
+    category: "Milestones",
+    location: "University of Pretoria",
+    title: "Master of Laws Degree"
+
   },
   {
     src: "/phd.jpeg",
@@ -372,14 +382,14 @@ export const galleryImages = [
     alt: "PhD Defense",
     category: "Milestones",
     location: "Ghent University",
-    title: "Exam Committee, Ghent University, 27 March 2025"
+    title: "Successful PhD Defence, Ghent University, 27 March 2025"
   },
   {
     src: "/work2.jpeg",
     alt: "Workshop",
     category: "Workshops",
     location: "Nairobi, Kenya",
-    title: "Facilitating a workshop "
+    title: "Remarks during a workshop on GIZ Kenya support for APSEA"
   },
   {
     src: "/ombuds.jpeg",
@@ -393,14 +403,14 @@ export const galleryImages = [
     alt: "Ombudsman Workshop",
     category: "Workshops",
     location: "Nairobi, Kenya",
-    title: "Ombudsman Panel Discussion, CAJ Workshop"
+    title: "A meeting with the leadership of the Commission on Administrative Justice (CAJ)"
   },
   {
     src: "/ombuds3.jpeg",
     alt: "Ombudsman Meeting",
     category: "Workshops",
     location: "Nairobi, Kenya",
-    title: "Meeting with the Ombudsman, CAJ Workshop"
+    title: "Part of the GIZ Kenya delegation visiting the Office of the Ombudsman (CAJ)"
   },
   {
     src: "/tweet.jpeg",
@@ -456,7 +466,7 @@ export const galleryImages = [
     alt: "Remarks",
     category: "Workshops",
     location: "GIZ Kenya",
-    title: "Making remarks at a workshop in GIZ Kenya"
+    title: "Representing the GIZ Good Governance Programme"
   },
   {
     src: "/lec2.jpeg",
@@ -478,13 +488,6 @@ export const galleryImages = [
     category: "Lectures",
     location: "Ghent University",
     title: "Guest lecturer, Master of Laws class of 2024-2025"
-  },
-  {
-    src: "/w4.jpeg",
-    alt: "Workshop Attendance",
-    category: "Workshops",
-    location: "Nairobi, Kenya",
-    title: "Attending a workshop in Nairobi, Kenya"
   },
   {
     src: "/firm.jpeg",

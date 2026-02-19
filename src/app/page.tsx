@@ -73,14 +73,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="space-y-6 text-sm text-gray-300 ">
-          <div className="flex items-center gap-2 hover:text-black transition">
-                <MapPin className="h-4 w-4 text-gray-500" />
+        <div className="space-y-6 text-sm text-black-300  ">
+          <div className="flex items-center gap-2 hover:text-amber-600 transition">
+                <MapPin className="h-4 w-4 text-gray-500 " />
                 <span>{profile.location}</span>
               </div>
 <a
                 href={`mailto:${profile.email}`}
-                className="flex items-center gap-2 hover:text-legal-navy transition hover:text-black transition"
+                className="flex items-center gap-2 hover:text-legal-navy transition hover:text-amber-600 "
               >
                 <Mail className="h-4 w-4 text-gray-500" />
                 <span className="truncate">{profile.email}</span>
@@ -107,7 +107,7 @@ export default function Home() {
 
         <nav className="mt-12 hidden md:block space-y-4">
           {['About', 'Experience', 'Education', 'Publications', 'Contact'].map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} className="block text-gray-400 hover:text-black hover:translate-x-2 transition-transform">
+            <a key={item} href={`#${item.toLowerCase()}`} className="block text-black-400 hover:text-amber-600 hover:translate-x-2 transition-transform">
               {item}
             </a>
           ))}
@@ -354,6 +354,9 @@ export default function Home() {
           </a>
           <a href={`tel:${office.phone.replace(/\s/g, '')}`} className="hover:text-yellow-500 transition flex items-center gap-2">
             <span className="text-yellow-600">📞</span> {office.phone}
+          </a>
+          <a href={office.link} target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition flex items-center gap-2">
+            <span className="text-yellow-600">🔗</span> Visit Website
           </a>
         </div>
       </div>
