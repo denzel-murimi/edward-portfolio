@@ -396,7 +396,7 @@ export const galleryImages = [
     alt: "Ombudsman Workshop",
     category: "Workshops",
     location: "Nairobi, Kenya",
-    title: "Facilitating a workshop for the Office of the Ombudsman (CAJ)"
+    title: "Part of the GIZ Kenya delegation visiting the Office of the Ombudsman (CAJ)"
   },
   {
     src: "/ombuds2.jpeg",
